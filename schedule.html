@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Schedule</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .schedule-tabs .nav-link {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
+        .schedule-tabs .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .table {
+            margin-top: 20px;
+            background-color: #ffffff;
+        }
+        .table thead {
+            background-color: #007bff;
+            color: white;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        h4 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation (Navbar with logo and links) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861" alt="Logo" style="height: 40px; margin-right: 10px;"> 
+            BU Open House
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="speakers.html">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workshops.html">Workshops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="program.html">Program</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Event Schedule Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Event Schedule</h2>
+    
+    <!-- Tabs for Faculties -->
+    <ul class="nav nav-pills mb-3 schedule-tabs justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-business-tab" data-bs-toggle="pill" data-bs-target="#pills-business" type="button" role="tab" aria-controls="pills-business" aria-selected="true">คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-digital-media-tab" data-bs-toggle="pill" data-bs-target="#pills-digital-media" type="button" role="tab" aria-controls="pills-digital-media" aria-selected="false">คณะดิจิทัลมีเดียและศิลปะภาพยนตร์</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-law-tab" data-bs-toggle="pill" data-bs-target="#pills-law" type="button" role="tab" aria-controls="pills-law" aria-selected="false">คณะนิติศาสตร์</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-communication-tab" data-bs-toggle="pill" data-bs-target="#pills-communication" type="button" role="tab" aria-controls="pills-communication" aria-selected="false">คณะนิเทศศาสตร์</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-business-admin-tab" data-bs-toggle="pill" data-bs-target="#pills-business-admin" type="button" role="tab" aria-controls="pills-business-admin" aria-selected="false">คณะบริหารธุรกิจ</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-it-tab" data-bs-toggle="pill" data-bs-target="#pills-it" type="button" role="tab" aria-controls="pills-it" aria-selected="false">คณะเทคโนโลยีสารสนเทศและนวัตกรรม</button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="pills-tabContent">
+        <!-- Example Schedule for Faculty 1 -->
+        <div class="tab-pane fade show active" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab">
+            <h4>คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">กิจกรรม</th>
+                        <th scope="col">วิทยากร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:30</td>
+                        <td>การสร้างธุรกิจสตาร์ทอัพ</td>
+                        <td>ดร. สมชาย นาคสวัสดิ์</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:00</td>
+                        <td>เทคนิคการบริหารจัดการสำหรับผู้ประกอบการ</td>
+                        <td>คุณ นวพร รัตนกุล</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Example Schedule for Faculty 2 -->
+        <div class="tab-pane fade" id="pills-digital-media" role="tabpanel" aria-labelledby="pills-digital-media-tab">
+            <h4>คณะดิจิทัลมีเดียและศิลปะภาพยนตร์</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">กิจกรรม</th>
+                        <th scope="col">วิทยากร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:30</td>
+                        <td>การสร้างภาพยนตร์ดิจิทัล</td>
+                        <td>คุณ ปวีณ ภูริจิตปัญญา</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:00</td>
+                        <td>เทคนิคการถ่ายภาพยนตร์แบบมืออาชีพ</td>
+                        <td>คุณ จิตติ พงษ์ไพโรจน์</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Schedule for Law Faculty -->
+        <div class="tab-pane fade" id="pills-law" role="tabpanel" aria-labelledby="pills-law-tab">
+            <h4>คณะนิติศาสตร์</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">กิจกรรม</th>
+                        <th scope="col">วิทยากร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:30</td>
+                        <td>การบังคับใช้กฎหมายสิ่งแวดล้อม</td>
+                        <td>ดร. ปรเมษฐ์ จันทวร</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:00</td>
+                        <td>การฟ้องร้องในธุรกิจระหว่างประเทศ</td>
+                        <td>คุณ พิสิฐ คำพร</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Schedule for Communication Arts Faculty -->
+        <div class="tab-pane fade" id="pills-communication" role="tabpanel" aria-labelledby="pills-communication-tab">
+            <h4>คณะนิเทศศาสตร์</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">กิจกรรม</th>
+                        <th scope="col">วิทยากร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:30</td>
+                        <td>การสื่อสารยุคดิจิทัล</td>
+                        <td>คุณ ชนินทร์ จงประสิทธิ์</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:00</td>
+                        <td>เทคนิคการผลิตสื่อโทรทัศน์</td>
+                        <td>คุณ วิทยา ปานศรีงาม</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Schedule for Business Administration Faculty -->
+        <div class="tab-pane fade" id="pills-business-admin" role="tabpanel" aria-labelledby="pills-business-admin-tab">
+            <h4>คณะบริหารธุรกิจ</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">กิจกรรม</th>
+                        <th scope="col">วิทยากร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:30</td>
+                        <td>กลยุทธ์การตลาดในยุคดิจิทัล</td>
+                        <td>คุณ จิรภัทร์ วิริยะกิจ</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:00</td>
+                        <td>การสร้างแบรนด์ในโลกออนไลน์</td>
+                        <td>คุณ พิมพ์ลภัส อินทจักร</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Schedule for IT Faculty -->
+        <div class="tab-pane fade" id="pills-it" role="tabpanel" aria-labelledby="pills-it-tab">
+            <h4>คณะเทคโนโลยีสารสนเทศและนวัตกรรม</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">กิจกรรม</th>
+                        <th scope="col">วิทยากร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:30</td>
+                        <td>การพัฒนาแอปพลิเคชันสำหรับธุรกิจ</td>
+                        <td>ดร. ธนชัย จินดาพล</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 12:00</td>
+                        <td>การรักษาความปลอดภัยไซเบอร์ในโลกธุรกิจ</td>
+                        <td>คุณ พิทักษ์ บริบูรณ์</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+    <div class="text-center p-3 text-light">
+        © 2024 Bangkok University Open House
+    </div>
+</footer>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- NANTAPHOB  -->

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors & Partners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Set the body background to black */
+        body {
+            background-color: #000;
+            color: white; /* Ensure text is white for visibility */
+        }
+
+        /* Custom styling for sponsor logos */
+        .sponsor-logo {
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        /* Adjusting card layout for visual appeal */
+        .card {
+            background-color: #222; /* Dark background for cards */
+            color: white; /* White text inside cards */
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-extend-tab {
+            margin-top: 20px;
+        }
+
+        /* Initially hide sponsor cards for "Load More" functionality */
+        .hidden {
+            display: none;
+        }
+
+        /* Style for the Load More button */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        /* Style the footer with black background and light text */
+        footer {
+            background-color: #000; /* Change footer background to black */
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation (Navbar with logo and links) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861" alt="Logo" style="height: 40px; margin-right: 10px;"> 
+            BU Open House
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="speakers.html">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workshops.html">Workshops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="program.html">Program</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sponsors Section -->
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Our Sponsors and Partners</h1>
+    <div class="row g-4" id="sponsor-container">
+        <!-- Initially visible sponsor cards -->
+        <div class="col-md-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <img src="https://contents.bu.ac.th/contents/images/mous/33dfa76b-3caa-4e7a-9bd8-f1e78b6e9716.jpg" class="sponsor-logo img-fluid" alt="Sponsor 1 Logo">
+                    <h5 class="card-title">Ui Path Academy EMPLOYEES</h5>
+                    <p class="card-text">Partner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <img src="https://contents.bu.ac.th/contents/images/mous/5e200b1a-dd1c-4809-af5f-8087009f0ddc.jpg" class="sponsor-logo img-fluid" alt="Sponsor 2 Logo">
+                    <h5 class="card-title">Real Bangkok</h5>
+                    <p class="card-text">Partner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <img src="https://contents.bu.ac.th/contents/images/mous/d5234e43-bf51-4ed6-971c-f45e1c83b106.jpg" class="sponsor-logo img-fluid" alt="Sponsor 3 Logo">
+                    <h5 class="card-title">เงินเทอร์โบ</h5>
+                    <p class="card-text">Partner</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden sponsor cards (will be shown when "Load More" is clicked) -->
+        <div class="col-md-4 hidden">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <img src="https://contents.bu.ac.th/contents/images/mous/76e3bfff-ef44-48ee-ac6a-870bdfb523e2.webp" class="sponsor-logo img-fluid" alt="Sponsor 4 Logo">
+                    <h5 class="card-title">Paloalto Network</h5>
+                    <p class="card-text">Partner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 hidden">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <img src="https://contents.bu.ac.th/contents/images/mous/64fd1247-44df-4da3-a9cd-a41e4719d147.jpg" class="sponsor-logo img-fluid" alt="Sponsor 5 Logo">
+                    <h5 class="card-title">BugBlio Studio</h5>
+                    <p class="card-text">Partner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 hidden">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <img src="https://contents.bu.ac.th/contents/images/mous/516efa7f-46ee-43b9-91ef-cadd7549ea40.jpg" class="sponsor-logo img-fluid" alt="Sponsor 6 Logo">
+                    <h5 class="card-title">Ritsumeikan University</h5>
+                    <p class="card-text">MOU</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more sponsors as needed -->
+    </div>
+
+    <!-- Pagination button -->
+    <div class="text-center btn-extend-tab">
+        <button class="btn btn-primary" id="loadMoreBtn">Load More</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start mt-auto">
+    <div class="text-center p-3">
+        © 2024 Bangkok University Open House
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript for Load More -->
+<script>
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+        const hiddenCards = document.querySelectorAll('.hidden');
+        hiddenCards.forEach((card, index) => {
+            if (index < 3) {
+                card.classList.remove('hidden');  // Show the next 3 cards
+            }
+        });
+
+        // If no more hidden cards, remove the Load More button
+        if (document.querySelectorAll('.hidden').length === 0) {
+            document.getElementById('loadMoreBtn').style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
+<!-- WEERAPHOT  -->

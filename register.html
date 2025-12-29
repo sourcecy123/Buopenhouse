@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Set background color for the body to black */
+        body {
+            background-color: #000;
+            font-family: sans-serif;
+            color: white; /* Set text color to white */
+        }
+
+        /* Center the registration card and add padding */
+        .registration-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            max-width: 600px;
+            margin: 50px auto;
+            color: #333; /* Ensure text inside the card is dark for readability */
+        }
+
+        /* Style the form title */
+        .registration-card h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333; /* Dark color for the title */
+        }
+
+        /* Custom styles for the form inputs */
+        .form-control {
+            border-radius: 5px;
+        }
+
+        /* Style the submit button */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation (Navbar with logo and links) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861" alt="Logo" style="height: 40px; margin-right: 10px;"> 
+            BU Open House
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="speakers.html">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workshops.html">Workshops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="program.html">Program</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Registration Form Section -->
+<div class="container">
+    <div class="registration-card">
+        <h1>Register for the Event</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start mt-auto">
+    <div class="text-center p-3">
+        © 2024 Bangkok University Open House
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- WEERAPHOT  -->
